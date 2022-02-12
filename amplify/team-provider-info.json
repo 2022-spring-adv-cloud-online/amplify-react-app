@@ -10,6 +10,14 @@
       "StackName": "amplify-cryptoapp22s-dev-111923",
       "StackId": "arn:aws:cloudformation:us-east-2:471387403995:stack/amplify-cryptoapp22s-dev-111923/ec4a7ac0-8c27-11ec-a725-0ab302c958c0",
       "AmplifyAppId": "d3o4z1jmwizwog"
+    },
+    "categories": {
+      "function": {
+        "cryptofunction22s": {
+          "deploymentBucketName": "amplify-cryptoapp22s-dev-111923-deployment",
+          "s3Key": "amplify-builds/cryptofunction22s-624664533733446a7242-build.zip"
+        }
+      }
     }
   }
 }
