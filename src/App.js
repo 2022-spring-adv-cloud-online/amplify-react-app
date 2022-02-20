@@ -62,39 +62,39 @@ const App = () => {
 
       {!loading && 
       
-      <div>
-        <input
-          onChange={e => updateInputValues('limit', e.target.value)}
-          placeholder="Enter a limit"
-        />
+        <div>
+          <input
+            onChange={e => updateInputValues('limit', e.target.value)}
+            placeholder="Enter a limit"
+          />
 
-        <input
-          placeholder="Enter a starting value"
-          onChange={e => updateInputValues('start', e.target.value)}
-        />
+          <input
+            placeholder="Enter a starting value"
+            onChange={e => updateInputValues('start', e.target.value)}
+          />
 
-        <button 
-          onClick={fetchCoins}
-        >
-          Fetch Coins
-        </button>
+          <button 
+            onClick={fetchCoins}
+          >
+            Fetch Coins
+          </button>
 
-        {
-          coins.map((coin) => (
-            <div 
-              key={coin.name}
-            >
-              <h2>
-                {coin.name} - {coin.symbol}
-              </h2>
-              <h5>
-                ${coin.price_usd}
-              </h5>
-            </div>
-          ))
-        }
+          {
+            coins.map((coin) => (
+              <div 
+                key={coin.name}
+              >
+                <h2>
+                  {coin.name} - {coin.symbol}
+                </h2>
+                <h5>
+                  ${coin.price_usd}
+                </h5>
+              </div>
+            ))
+          }
 
-      </div>
+        </div>
       }
     </div>
   );
