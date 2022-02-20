@@ -59,6 +59,23 @@ app.get(
   }
 );
 
+app.get(
+  "/born"
+  , async (req, res) => {
+
+    try {
+      const data = await axios.get("https://api.github.com/users/tsteelematc");
+      res.json({
+        bornOnInfo: data.data
+      });
+    }
+    catch (err) {
+      res.json({
+        error: err
+      });
+    }
+  }
+);
 
 app.get('/item', function(req, res) {
   // Add your code here
